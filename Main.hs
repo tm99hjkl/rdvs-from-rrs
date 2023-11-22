@@ -9,10 +9,10 @@ main = do
   let pp = PP
 
   putStrLn "generate the signer's key pair."
-  let (spk, ssk) = _SKG PP
+  let (spk, ssk) = _SKG pp
 
   putStrLn "generate the designated verifier's key pair."
-  let (vpk, vsk) = _VKG PP
+  let (vpk, vsk) = _VKG pp
 
   putStrLn "DV generates a forged signature."
   let msg = "I'll give you 1000 billion yen."

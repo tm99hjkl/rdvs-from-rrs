@@ -1,9 +1,6 @@
 module RRS where
+
 import Common
-data Key = Key deriving(Show)
-type Msg = String
-data Sig = Sig deriving(Show)
-data Rpd = Rpd deriving(Show)
 
 type PK  = Key
 type SK  = Key
@@ -12,7 +9,6 @@ type SSK = Key
 type VPK = Key
 type VSK = Key
 type Ring = [PK]
-
 
 _KG :: PP -> (PK, SK)
 _KG PP = (Key, Key)
